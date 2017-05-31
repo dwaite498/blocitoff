@@ -8,20 +8,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class='container'>
-    <div class='nav navbar'>
-      <ul class='nav pull-left'>
-        <li>this will be a link</li>
-        <li>another link</li>
-        <li>and another</li>
-      </ul>
+  <div class="container">
+    <div class="nav navbar">
+      <span class="nav pull-left">
+        <%= link_to "Blocitoff", root_path, :class => "btn btn-primary" %>
+        <%= link_to "About", welcome_about_path, :class => "btn btn-primary" %>
+        <%= link_to "Todo List", root_path, :class => "btn btn-primary" %>
+      </span>
   
-      <ul class='nav pull-right'>
-        <li>Logout</li>
+      <span class="nav pull-right">
+        <%= link_to "Logout", root_path, :class => "btn btn-primary" %>
   
-        <li>Login</li>
-        <li>Sign Up</li>
-      </ul>
+        <%= link_to "Login", root_path, :class => "btn btn-primary" %>
+        <%= link_to "Logout", root_path, :class => "btn btn-primary" %>
+      </span>
     </div>
   </div>
   
