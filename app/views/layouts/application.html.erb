@@ -8,22 +8,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <div class="nav navbar">
-      <span class="nav pull-left">
-        <%= link_to "Blocitoff", root_path, :class => "btn btn-primary" %>
-        <%= link_to "About", welcome_about_path, :class => "btn btn-primary" %>
-        <%= link_to "Todo List", root_path, :class => "btn btn-primary" %>
-      </span>
+  <nav class="navbar navbar-inverse">
+    <%= link_to "Blocitoff", root_path, class: "navbar-brand" %>
+    
+    <%= link_to "About", welcome_about_path, :class => "btn btn-primary" %>
+    <%= link_to "Todo List", root_path, :class => "btn btn-primary" %>
   
-      <span class="nav pull-right">
-        <%= link_to "Logout", root_path, :class => "btn btn-primary" %>
-  
-        <%= link_to "Login", root_path, :class => "btn btn-primary" %>
-        <%= link_to "Logout", root_path, :class => "btn btn-primary" %>
-      </span>
-    </div>
-  </div>
+
+    <% if user_signed_in? %>
+      <%= link_to "Logout", root_path, :class => "btn btn-primary" %>
+    <% else %>
+      <%= link_to "Login", root_path, :class => "btn btn-primary" %>
+      <%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-primary" %>
+    <% end %>
+  </nav>
   <div class="container">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
