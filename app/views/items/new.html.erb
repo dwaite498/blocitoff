@@ -1,0 +1,10 @@
+<h1>new test</h1>
+
+<div class="container">
+    <%= puts @item %>
+    <%= simple_form_for [@user, @item] do |f| %>
+        <%= f.input :name, label: "Item Name" %>
+
+        <%= f.button :submit %>
+    <% end %>
+</div>

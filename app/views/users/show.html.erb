@@ -4,3 +4,11 @@
     <p><%= @user.email %></p>
     <p><%= link_to "Edit Profile", edit_user_registration_path %></p>
 </div>
+<div class="container">
+    <% @items.each do |item| %>
+        <p>
+        <%= item.name %>
+        <%= item.user.username %>    
+        </p>
+    <% end %>
+</div>

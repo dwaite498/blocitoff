@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessor :login
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+  has_many :items
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   
