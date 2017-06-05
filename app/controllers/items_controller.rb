@@ -8,15 +8,21 @@ class ItemsController < ApplicationController
         @item = current_user.items.build(item_params)
         if @item.save
            redirect_to user_path(@user.id)
-       else
+        else
            render :new
-       end
+        end
         
     end
     
     def new
         @user = current_user
         @item = current_user.items.build
+    end
+    
+    def destroy
+       item = current_user.items.find(params[:id])
+       item.destroy
+       redirect_to user_path(current_user.id)
     end
     
     private

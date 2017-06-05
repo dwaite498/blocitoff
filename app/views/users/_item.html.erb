@@ -1,0 +1,5 @@
+<p>
+    <%= item.name %>
+    <%= item.user.username %> 
+    <%= link_to "", user_item_path(current_user, item), method: :delete, class: 'glyphicon glyphicon-ok' %>
+</p>
