@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise', '~> 4.3'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'faker', '~> 1.7', '>= 1.7.3'
 
 # gem 'bcrypt', '~> 3.1.7'
 
