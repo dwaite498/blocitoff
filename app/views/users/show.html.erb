@@ -9,7 +9,7 @@
         <p>
         <%= item.name %>
         <%= item.user.username %> 
-        <%= link_to "", user_item_path(current_user, item),:remote => true, method: :delete, class: 'glyphicon glyphicon-ok delete_item' %></break>
+        <%= link_to "", user_item_path(current_user, item),:remote => true, method: :delete, class: 'glyphicon glyphicon-ok delete_item' %>
         <%= time_left(item) %>
         </p>
     <% end %>
