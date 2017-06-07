@@ -12,8 +12,10 @@ User.create!(
 user = User.all
     
 20.times do
-    Item.create!(
-        :name => Faker::Name.name,
+    item = Item.create!(
+        :name => Faker::Hipster.sentence(2),
         :user => user.sample
         )
+        item.created_at = (rand*10).days.ago
+        item.save
     end
