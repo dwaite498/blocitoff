@@ -13,7 +13,7 @@ user = User.all
     
 20.times do
     Item.create!(
-        :name => Faker::Name.name,
+        :name => Faker::Hipster.sentence(2),
         :user => user.sample
         )
     end
