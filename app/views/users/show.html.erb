@@ -2,7 +2,8 @@
 
 <div class="container">
     <p><%= @user.email %></p>
-    <p><%= link_to "Edit Profile", edit_user_registration_path %></p>
+    <p><%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-success" %></p>
+    <p><%= link_to "New Todo Item", new_user_item_path(current_user), class: "btn btn-primary" %></p>
 </div>
 <div class="container">
     <% @items.each do |item| %>
