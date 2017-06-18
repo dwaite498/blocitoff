@@ -1,24 +1,26 @@
+# Blocitoff
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+An app that allows users to create a free account and create a list of todo items that delete themselves after seven days.
 
+![Blocitoff Todo Creation](https://github.com/dwaite498/)
 
-Welcome to your Rails project on Cloud9 IDE!
+Once a user logs in they are redirected to their profile page and they can start creating to do items. These items delete themselves after seven days.
 
-To get started, just do the following:
+## Deployed at:
+https://limitless-coast-63079.herokuapp.com/
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://blocitoff-dwaite498.c9users.io/).
+## Built With
 
-Happy coding!
-The Cloud9 IDE team
+* Ruby on Rails
 
+## Authors
 
-## Support & Documentation
+* **David Waite** - (https://www.linkedin.com/in/david-waite2017/)
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* This project was made as a part of the Bloc.io curriculum.
